@@ -1,0 +1,51 @@
+,Feature,Type,Description
+0,encounter_id,Numeric,Unique identifier of an encounter
+1,patient_nbr,Numeric,Unique identifier of a patient
+2,race,Nominal,"Values: Caucasian, Asian, African American, Hispanic, and other"
+3,gender,Nominal,"Values: male, female, and unknown/invalid"
+4,age,Nominal,"Grouped in 10-year intervals: 0, 10), 10, 20), …, 90, 100)"
+5,weight,Numeric,Weight in pounds.
+6,admission_type_id,Nominal,"Integer identifier corresponding to 9 distinct values, for example, emergency, urgent, elective, newborn, and not available"
+7,discharge_disposition_id,Nominal,"Integer identifier corresponding to 29 distinct values, for example, discharged to home, expired, and not available"
+8,admission_source_id,Nominal,"Integer identifier corresponding to 21 distinct values, for example, physician referral, emergency room, and transfer from a hospital"
+9,time_in_hospital,Numeric,Integer number of days between admission and discharge
+10,payer_code,Nominal,"Integer identifier corresponding to 23 distinct values, for example, Blue Cross/Blue Shield, Medicare, and self-pay"
+11,medical_specialty,Nominal,"Integer identifier of a specialty of the admitting physician, corresponding to 84 distinct values, for example, cardiology, internal medicine, family/general practice, and surgeon"
+12,num_lab_procedures,Numeric,Number of lab tests performed during the encounter
+13,num_procedures,Numeric,Number of procedures (other than lab tests) performed during the encounter
+14,num_medications,Numeric,Number of distinct generic names administered during the encounter
+15,number_outpatient,Numeric,Number of outpatient visits of the patient in the year preceding the encounter
+16,number_emergency,Numeric,Number of emergency visits of the patient in the year preceding the encounter
+17,number_inpatient,Numeric,Number of inpatient visits of the patient in the year preceding the encounter
+18,diag_1,Nominal,The primary diagnosis (coded as first three digits of ICD9); 848 distinct values
+19,diag_2,Nominal,Secondary diagnosis (coded as first three digits of ICD9); 923 distinct values
+20,diag_3,Nominal,Additional secondary diagnosis (coded as first three digits of ICD9); 954 distinct values
+21,number_diagnoses,Numeric,Number of diagnoses entered to the system
+22,max_glu_serum,Nominal,"Indicates the range of the result or if the test was not taken. Values: “>200,” “>300,” “normal,” and “none” if not measured"
+23,A1Cresult,Nominal,"Indicates the range of the result or if the test was not taken. Values: “>8” if the result was greater than 8%, “>7” if the result was greater than 7% but less than 8%, “normal” if the result was less than 7%, and “none” if not measured."
+24,metformin,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+25,repaglinide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+26,nateglinide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+27,chlorpropamide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+28,glimepiride,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+29,acetohexamide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+30,glipizide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+31,glyburide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+32,tolbutamide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+33,pioglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+34,rosiglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+35,acarbose,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+36,miglitol,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+37,troglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+38,tolazamide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+39,examide,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+40,citoglipton,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+41,insulin,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+42,glyburide-metformin,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+43,glipizide-metformin,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+44,glimepiride-pioglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+45,metformin-rosiglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+46,metformin-pioglitazone,Nominal,"Indicates whether the drug was prescribed or there was a change in the dosage. Values: “up” if the dosage was increased during the encounter, “down” if the dosage was decreased, “steady” if the dosage did not change, and “no” if the drug was not prescribed"
+47,change,Nominal,Indicates if there was a change in diabetic medications (either dosage or generic name). Values: “change” and “no change”
+48,diabetesMed,Nominal,Indicates if there was any diabetic medication prescribed. Values: “yes” and “no”
+49,readmitted,Nominal,"Days to inpatient readmission. Values: “<30” if the patient was readmitted in less than 30 days, “>30” if the patient was readmitted in more than 30 days, and “No” for no record of readmission."
